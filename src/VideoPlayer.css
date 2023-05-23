@@ -1,3 +1,16 @@
+.videoContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .videoPlayer{
-    width:80%;
+  padding-left: 50px;
+  padding-top: 50px;
+  width:640px;
+}
+span {
+    color:gray;
+}
+.video-text{
+    padding-bottom: 20px;
 }

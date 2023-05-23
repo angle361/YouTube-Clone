@@ -39,8 +39,8 @@ function Header() {
         <AppsIcon style={{ fontSize: 28 }} className="header-icon" />
         <NotificationsIcon style={{ fontSize: 28 }} className="header-icon" />
         <Avatar
-          alt="Remy Sharp"
-          src="https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+          alt="S"
+          src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F008%2F442%2F086%2Foriginal%2Fillustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg&tbnid=usLFMdEi7sJBEM&vet=12ahUKEwil3Kuimoz_AhVOHbcAHUe6DWEQMygAegUIARDnAQ..i&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fuser-icon&docid=E3VnjqP3ez2tMM&w=1920&h=1920&q=user%20logo&ved=2ahUKEwil3Kuimoz_AhVOHbcAHUe6DWEQMygAegUIARDnAQ"
           className="header-avatar"
         />
       </div>

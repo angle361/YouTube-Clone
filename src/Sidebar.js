@@ -17,8 +17,6 @@ import FlagIcon from '@material-ui/icons/Flag';
 import HelpIcon from '@material-ui/icons/Help';
 import FeedbackIcon from '@material-ui/icons/Feedback';
 
-import { Avatar } from "@material-ui/core";
-
 
 function Sidebar() {
     return (

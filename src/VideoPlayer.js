@@ -15,9 +15,11 @@ function VideoPlayer() {
     const video = user.find((ele) => ele.postId === id);
     console.log(video);
     return (
-        <div>
+        <div className='videoContainer'>
             <div className="videoPlayer">
-                <ReactPlayer url= {video.submission.mediaUrl} playIcon />
+                <video width="640" height="480" controls>
+                    <source src={video.submission.mediaUrl} type="video/mp4" />
+                </video>
                 <div className="videoCard-info">
                     <Avatar
                         className="videoCard-avatar"
@@ -27,16 +29,23 @@ function VideoPlayer() {
                     <div className="video-text">
                         <h4>{video.submission.title}</h4>
                         <p>{video.creator.handle}</p>
-                        <p>Description</p>
+                        <p><span>Description</span></p>
                         <p>{video.submission.description}</p>
-                        <p>
+                        <p><span>
                         {video.comment.count} comments · {video.reaction.count} reactions
+                        </span>
                         </p>
                     </div>
                 </div>
             </div>
-            {/* <ReactPlayer url= "https://youtu.be/I_MPfuS7R9I" /> */}
+            
         </div>
+        // <div>
+        //     <ReactPlayer url= "https://cdn.gro.care/4dc9fddff1c8_1683731818849.mp4" />
+        //     <video width="320" height="240" controls>
+        //         <source src="https://cdn.gro.care/4dc9fddff1c8_1683731818849.mp4" type="video/mp4" />
+        //     </video>
+        // </div>
     );
 }
 export default VideoPlayer;

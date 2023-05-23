@@ -57,7 +57,7 @@ function RecommendedVideos() {
       <div className="recommendedVideo">
          {
           data.map((vedio) =>
-            <Link to={`/vedioplayer/${vedio.postId}`}> 
+            <Link to={`/vedioplayer/${vedio.postId}`} style={{textDecoration: "none",color:"black"}}> 
               <VideoCard
                 image={vedio.submission.thumbnail}
                 title={vedio.submission.title}
