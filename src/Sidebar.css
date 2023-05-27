@@ -4,9 +4,6 @@
     
 }
 
-
-
-
 .sidebar > hr{
     height: 0.9px;
     border: 0;
@@ -14,7 +11,6 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 
 .sidebar-creator{
     width: 85%;
@@ -34,14 +30,12 @@
     text-align: justify;
     margin-top: 10px ;
     margin-bottom: 15px;
-    /* letter-spacing: 0.02rem; */
 }
 
 .sidebar-avatar{
     margin-top: 12px;
     display: flex;
     align-items: center;
-    /* margin: auto; */
     margin-left: 5%;    
 }
 

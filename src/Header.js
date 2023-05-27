@@ -29,9 +29,9 @@ function Header() {
           placeholder="Search"
         />
 
-        {/* <Link to={`/search/${inputSearch}`} className="header-input-icon"> */}
-          <SearchIcon className="search-icon" />
-        {/* </Link> */}
+        
+        <SearchIcon className="search-icon" />
+       
       </div>
 
       <div className="header-right">

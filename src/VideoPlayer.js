@@ -1,19 +1,17 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
 import { useStateValue } from './StateProvider';
 import { Avatar } from '@material-ui/core';
 import "./VideoPlayer.css";
 
 
-// Render a YouTube video player
 function VideoPlayer() {
     const [{ user }, dispatch] = useStateValue();
-    console.log(user);
+   // console.log(user);
     const url = window.location.href;
     const id = url.split("/").pop();
-    console.log(id);
+   // console.log(id);
     const video = user.find((ele) => ele.postId === id);
-    console.log(video);
+   // console.log(video);
     return (
         <div className='videoContainer'>
             <div className="videoPlayer">
@@ -40,12 +38,6 @@ function VideoPlayer() {
             </div>
             
         </div>
-        // <div>
-        //     <ReactPlayer url= "https://cdn.gro.care/4dc9fddff1c8_1683731818849.mp4" />
-        //     <video width="320" height="240" controls>
-        //         <source src="https://cdn.gro.care/4dc9fddff1c8_1683731818849.mp4" type="video/mp4" />
-        //     </video>
-        // </div>
     );
 }
 export default VideoPlayer;
