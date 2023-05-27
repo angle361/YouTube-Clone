@@ -14,7 +14,7 @@ function App() {
 
         <Switch>
           
-          <Route path="/vedioplayer/:url">
+          <Route path="/vedioplayer/:pg_no/:url">
             <div className="app_page">
               <Sidebar />
               <VideoPlayer />

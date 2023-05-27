@@ -4,14 +4,11 @@ import VideoCard from "./VideoCard";
 import FilterBar from "./FilterBar";
 import { Link } from "react-router-dom";
 import { Button } from '@material-ui/core';
-import { useStateValue } from './StateProvider';
-import { actionTypes } from './Reducer';
 
 function RecommendedVideos() {
 
   const [data, setData] = useState([]);
   const [page, setPage] = useState(0);
-  const [{}, dispatch] = useStateValue();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,10 +16,6 @@ function RecommendedVideos() {
         const response = await fetch(`https://internship-service.onrender.com/videos?page=${page}`);
         const jsonData = await response.json();
         setData(jsonData.data.posts);
-          dispatch({
-            type: actionTypes.SET_USER,
-            user: jsonData.data.posts,
-          })
         
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -53,8 +46,8 @@ function RecommendedVideos() {
       
       <div className="recommendedVideo">
          {
-          data.map((vedio) =>
-            <Link to={`/vedioplayer/${vedio.postId}`} style={{textDecoration: "none",color:"black"}}> 
+          data?.map((vedio) =>
+            <Link to={`/vedioplayer/${page}/${vedio.postId}`} style={{textDecoration: "none",color:"black"}}> 
               <VideoCard
                 image={vedio.submission.thumbnail}
                 title={vedio.submission.title}
