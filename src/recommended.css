@@ -63,6 +63,8 @@
         display: none;
     }
     .recommendedVideo {
-        width: 50%;
+        margin: 10px;
+        width: 80%;
+        flex-direction: column;
     }
 }
