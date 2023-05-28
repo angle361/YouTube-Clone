@@ -44,3 +44,8 @@
     font-weight: 400;
     letter-spacing: 0.02rem;
 }
+@media (max-width: 640px) {
+    .sidebar{
+        display: none;
+    }
+}

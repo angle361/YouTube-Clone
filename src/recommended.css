@@ -10,7 +10,7 @@
     width: 100%;
 }
 .recommended {
-    flex: 0.8;
+    /* flex: 0.8; */
     background-color: rgb(248, 248, 248);
     
     padding-bottom: 20px;
