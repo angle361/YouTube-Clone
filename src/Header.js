@@ -9,8 +9,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import { Link } from "react-router-dom";
 
 function Header() {
-  const [inputSearch, setInputSearch] = useState("");
-
+ 
   return (
     <div className="header">
       <div className="header-left">
@@ -22,16 +21,8 @@ function Header() {
       </div>
 
       <div className="header-middle">
-        <input
-          onChange={(e) => setInputSearch(e.target.value)}
-          value={inputSearch}
-          type="text"
-          placeholder="Search"
-        />
-
-        
-        <SearchIcon className="search-icon" />
-       
+        <input type="text" placeholder="Search" /> 
+        <SearchIcon className="search-icon" /> 
       </div>
 
       <div className="header-right">
